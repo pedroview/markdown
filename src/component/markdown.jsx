@@ -8,7 +8,14 @@ import CheatSheet from "./cheatSheet";
 import "./markdown.css";
 
 export default () => {
-  const [userInput, setUserInput] = useState("Type some *markdown* here!");
+  const markDownIntroText =
+    "# Markdown Editor/Preview by PedroView\n\n" +
+    "---\n" +
+    "### PedroView Services:\n\n" +
+    "1. Software Design & Development\n2. Cyber Security\n\n" +
+    "[Contact Developer](https://pedrojr.netlify.app)";
+
+  const [userInput, setUserInput] = useState(markDownIntroText);
 
   return (
     <Grid container>
@@ -18,7 +25,7 @@ export default () => {
       <Grid item sm={12} md={6}>
         <Preview userInput={userInput} />
       </Grid>
-      <Grid item sm={12} md={12}>
+      <Grid item sm={12}>
         <CheatSheet />
       </Grid>
     </Grid>
