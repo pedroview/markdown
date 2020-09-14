@@ -1,49 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// Material UI
-import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
-import amber from "@material-ui/core/colors/amber";
-// component entry
-import Markdown from "./component/markdown";
+import { MuiThemeProvider } from "@material-ui/core";
 
-// theme object for mui
-const theme = createMuiTheme({
-  palette: {
-    primary: amber,
-  },
-  overrides: {
-    MuiPaper: {
-      root: {
-        overflow: "hidden",
-        margin: 5,
-        boxSizing: "border-box",
-      },
-      rounded: {
-        borderRadius: 5,
-      },
-    },
-    MuiTableCell: {
-      head: {
-        backgroundColor: "black",
-        color: "white",
-      },
-      body: {
-        fontSize: 14,
-      },
-    },
-    MuiTableRow: {
-      root: {
-        "&:nth-of-type(odd)": {
-          backgroundColor: "silver",
-        },
-      },
-    },
-  },
-});
+// component entry and theme config
+import Markdown from "./component/markdown";
+import theme from "./theme";
 
 ReactDOM.render(
   <MuiThemeProvider theme={theme}>
-    <Markdown />,
+    <Markdown />
   </MuiThemeProvider>,
   document.getElementById("root")
 );

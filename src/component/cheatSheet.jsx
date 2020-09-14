@@ -41,7 +41,7 @@ export default () => {
   ];
 
   return (
-    <Paper elevation={4} className="cheatSheet">
+    <Paper elevation={4} style={{ marginTop: "30px" }}>
       <Table size="small">
         <TableHead>
           <TableRow>

@@ -10,10 +10,11 @@ import "./markdown.css";
 export default () => {
   const markDownIntroText =
     "# Markdown Editor/Preview by PedroView\n\n" +
-    "---\n" +
+    "---\n\n" +
     "### PedroView Services:\n\n" +
     "1. Software Design & Development\n2. Cyber Security\n\n" +
-    "[Contact Developer](https://pedrojr.netlify.app)";
+    "[Contact Developer](https://pedrojr.netlify.app)\n\n" +
+    "**you can type here**";
 
   const [userInput, setUserInput] = useState(markDownIntroText);
 
