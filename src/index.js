@@ -22,6 +22,22 @@ const theme = createMuiTheme({
         borderRadius: 5,
       },
     },
+    MuiTableCell: {
+      head: {
+        backgroundColor: "black",
+        color: "white",
+      },
+      body: {
+        fontSize: 14,
+      },
+    },
+    MuiTableRow: {
+      root: {
+        "&:nth-of-type(odd)": {
+          backgroundColor: "silver",
+        },
+      },
+    },
   },
 });
 
