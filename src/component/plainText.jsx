@@ -1,6 +1,5 @@
 import React from "react";
 import Paper from "@material-ui/core/Paper";
-import TextAreaAutosize from "@material-ui/core/TextAreaAutosize";
 import { withStyles } from "@material-ui/core/styles";
 
 export default (props) => {
@@ -12,7 +11,8 @@ export default (props) => {
   return (
     <Paper elevation={4} className="plainText">
       {/* <TextField variant="outlined" InputProps={{ classes: { input: classes.input } }} /> */}
-      <TextAreaAutosize
+      tytyyty
+      {/* <TextAreaAutosize
         placeholder="dfdf"
         // fullWidth
         // label="Example"
@@ -20,7 +20,7 @@ export default (props) => {
         // style={{ height, marginTop: "10px" }}
         // InputLabelProps={{ style: { height, ...(!focused && { top: `${labelOffset}px` }) } }}
         // inputProps={{ style: { height, padding: "0 14px", textAlign: "start" } }}
-      />
+      /> */}
       {/* <textarea className="input-text" onChange={({ target }) => setUserInput(target.value)} defaultValue={userInput} /> */}
     </Paper>
   );
