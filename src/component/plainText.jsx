@@ -1,5 +1,6 @@
 import React from "react";
 
+// plaintext component to get user input
 export default ({ userInput, setUserInput }) => {
   return (
     <div className="plainText">

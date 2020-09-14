@@ -7,6 +7,8 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 
 export default () => {
+  //markdown syntax array to map through
+  // first item in array is markdown element and last is markdown syntax
   const cheatSheetArray = [
     [
       "Heading",
@@ -53,6 +55,7 @@ export default () => {
         <TableBody>
           {/* loop through each syntax in cheatsheet object and return new jsx element */}
           {cheatSheetArray.map(([element, syntax], index) => (
+            // Don't forget the key={index} else react will yell at you
             <TableRow key={index}>
               <TableCell>{`${index}.`}</TableCell>
               <TableCell>{element}</TableCell>

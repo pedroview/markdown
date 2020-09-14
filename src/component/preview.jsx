@@ -1,6 +1,7 @@
 import React from "react";
 import Remarkable from "remarkable";
 
+// preview component to convert user input to markdown
 export default ({ userInput }) => {
   const getRawMarkup = () => {
     const md = new Remarkable();

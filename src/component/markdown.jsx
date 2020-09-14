@@ -8,6 +8,7 @@ import CheatSheet from "./cheatSheet";
 import "./markdown.css";
 
 export default () => {
+  // initail text to be dsplayed when user visit's web page
   const markDownIntroText =
     "# Markdown Editor/Preview by PedroView\n\n" +
     "---\n\n" +
@@ -16,6 +17,7 @@ export default () => {
     "[Contact Developer](https://pedrojr.netlify.app)\n\n" +
     "**you can type here**";
 
+  // holder for user input
   const [userInput, setUserInput] = useState(markDownIntroText);
 
   return (
