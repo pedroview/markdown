@@ -6,6 +6,7 @@ import amber from "@material-ui/core/colors/amber";
 // component entry
 import Markdown from "./component/markdown";
 
+// theme object for mui
 const theme = createMuiTheme({
   palette: {
     primary: amber,

@@ -1,6 +1,5 @@
 import React from "react";
 import Remarkable from "remarkable";
-import Paper from "@material-ui/core/Paper";
 
 export default ({ userInput }) => {
   const getRawMarkup = () => {
@@ -9,8 +8,9 @@ export default ({ userInput }) => {
   };
 
   return (
-    <Paper elevation={4} className="preview">
-      <div dangerouslySetInnerHTML={getRawMarkup()} className="output-text" />
-    </Paper>
+    <div className="preview">
+      <h2>Markdown Preview</h2>
+      <div dangerouslySetInnerHTML={getRawMarkup()} />
+    </div>
   );
 };
