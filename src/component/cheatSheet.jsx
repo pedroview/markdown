@@ -19,7 +19,7 @@ export default () => {
     ],
     ["Bold", <Fragment>**bold text here**</Fragment>],
     ["Italic", <Fragment>*italicized text*</Fragment>],
-    ["Blockquote", <Fragment>> blockquote</Fragment>],
+    ["Blockquote", <Fragment> {">"} blockquote</Fragment>],
     [
       "Ordered List",
       <Fragment>
@@ -43,7 +43,7 @@ export default () => {
   ];
 
   return (
-    <Paper elevation={4} style={{ marginTop: "30px" }}>
+    <Paper elevation={4} style={{ marginTop: "30px", overflow: "auto" }}>
       <Table size="small">
         <TableHead>
           <TableRow>
@@ -57,7 +57,7 @@ export default () => {
           {cheatSheetArray.map(([element, syntax], index) => (
             // Don't forget the key={index} else react will yell at you
             <TableRow key={index}>
-              <TableCell>{`${index}.`}</TableCell>
+              <TableCell>{`${index + 1}.`}</TableCell>
               <TableCell>{element}</TableCell>
               <TableCell align="center">{syntax}</TableCell>
             </TableRow>
